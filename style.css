@@ -1,5 +1,6 @@
 :root {
   --light-bg: #f9fafb;
+  --medium-font: 2.2rem;
 }
 html {
   box-sizing: border-box;
@@ -49,7 +50,7 @@ img {
   width: 100%;
 }
 
-p {
+p.logo-name {
   color: white;
   font-size: 10rem;
   font-family: "Norse-Bold", "Times New Roman", Times, serif;
@@ -67,4 +68,92 @@ footer {
   height: 100vh;
   width: 60%;
   background: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right .heading,
+form,
+.account {
+  padding: 5rem;
+}
+
+.right .heading {
+  font-size: var(--medium-font);
+  font-weight: bold;
+}
+
+.right .heading p:nth-child(3) {
+  margin-top: 3rem;
+}
+
+form {
+  background: white;
+  box-shadow: rgba(63, 63, 63, 0.35) 0px 3px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row {
+  display: flex;
+  gap: 5rem;
+}
+
+.row .row-child {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.55rem;
+}
+input {
+  width: 30rem;
+  border: 0.25px solid #e5e7eb;
+  border-radius: 0.5rem;
+  height: 3rem;
+  padding: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid blue;
+  border-radius: 0.5rem;
+  box-shadow: rgba(63, 63, 63, 0.35) 1px 2px 2px;
+}
+
+form h3 {
+  font-size: var(--medium-font);
+}
+
+.hidden {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.account button {
+  background-color: #596d48;
+  padding: 2rem 7rem;
+  color: white;
+  border-radius: 1.25rem;
+  border: unset;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.account p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.account p span {
+  color: #596d48;
 }
