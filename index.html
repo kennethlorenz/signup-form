@@ -10,10 +10,63 @@
     <section class="left">
       <div class="left-header">
         <img src="./images/odin-logo.png" alt="Odin Logo" />
-        <p>ODIN</p>
+        <p class="logo-name">ODIN</p>
       </div>
       <footer>Photo by Halie West on Unsplash</footer>
     </section>
-    <section class="right"></section>
+    <section class="right">
+      <div class="heading">
+        <p>
+          This is not a real online service! You know you need something like
+          this on your life to help you realize your deepest dreams.
+        </p>
+        <p>Sign up <span>now</span> to get started.</p>
+        <p>You know you want to.</p>
+      </div>
+      <form action="" meth="get">
+        <h3>Let's do this!</h3>
+        <div class="row">
+          <div class="row-child">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" />
+          </div>
+          <div class="row-child">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-child">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="row-child">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-child">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" required />
+            <p class="hidden">*Passwords do not match</p>
+          </div>
+          <div class="row-child">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="account">
+        <div><button>Create Account</button></div>
+        <p>
+          <a href="">Already have an account? <span>Log in</span></a>
+        </p>
+      </div>
+    </section>
   </body>
 </html>
